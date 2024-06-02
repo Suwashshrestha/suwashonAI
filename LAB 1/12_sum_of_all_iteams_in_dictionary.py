@@ -1,8 +1,14 @@
-d={'a': 100, 'b':200, 'c':300}
-for i in range(0,3):
-    n=int(input("Enter a number:"))
-    d[i]=n
-sum=0
-for i in d:
-    sum=sum+d[i]
-print("Sum of all the items in the dictionary is:", sum)
+
+dict = {}
+n = int(input("Enter number of items in dictionary: "))
+for i in range(n):
+    key = input("Enter key: ")
+    value = int(input("Enter value: "))
+    dict[key] = value
+sum = 0
+for i in dict:
+    sum = sum + dict[i]
+print("Sum of all items in dictionary is:", sum)
+
+
+
